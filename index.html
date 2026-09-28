@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Comanda · Pedidos de parrilla</title>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/carrito.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="cabecera__marca">
+      <img src="assets/img/logo.svg" alt="" width="44" height="44">
+      <div>
+        <h1 class="cabecera__titulo">La Comanda</h1>
+        <p class="cabecera__bajada">Pedidos de parrilla para retirar o con delivery</p>
+      </div>
+    </div>
+    <a href="#panel-carrito" class="cabecera__carrito">
+      Mi pedido <span id="contador-carrito" class="contador">0</span>
+    </a>
+  </header>
+
+  <main class="layout">
+
+    <section class="menu" aria-labelledby="titulo-menu">
+      <div class="menu__encabezado">
+        <h2 id="titulo-menu" class="menu__titulo">Menú</h2>
+        <input type="search" id="input-buscar" class="menu__buscador" placeholder="Buscar en el menú..." aria-label="Buscar en el menú" autocomplete="off">
+      </div>
+
+      <div id="filtros-categoria" class="filtros" role="group" aria-label="Filtrar por categoría"></div>
+
+      <p id="estado-carga" class="estado" role="status" aria-live="polite">Cargando el menú…</p>
+      <div id="grilla-productos" class="grilla"></div>
+    </section>
+
+    <aside id="panel-carrito" class="ticket" aria-labelledby="titulo-carrito">
+      <div class="ticket__cabeza">
+        <h2 id="titulo-carrito" class="ticket__titulo">Tu pedido</h2>
+        <button type="button" id="boton-vaciar" class="boton-texto">Vaciar</button>
+      </div>
+
+      <ul id="lista-carrito" class="carrito"></ul>
+
+      <div class="campo">
+        <label for="select-envio">Entrega</label>
+        <select id="select-envio"></select>
+      </div>
+
+      <dl class="totales">
+        <div class="totales__fila"><dt>Subtotal</dt><dd id="subtotal">$0</dd></div>
+        <div class="totales__fila"><dt>Envío</dt><dd id="costo-envio">$0</dd></div>
+        <div class="totales__fila totales__fila--final"><dt>Total</dt><dd id="total">$0</dd></div>
+      </dl>
+
+      <form id="form-checkout" class="checkout" novalidate>
+        <h3 class="checkout__titulo">Datos para el pedido</h3>
+
+        <div class="campo">
+          <label for="input-nombre">Nombre</label>
+          <input type="text" id="input-nombre" name="nombre" autocomplete="name">
+        </div>
+
+        <div class="campo">
+          <label for="input-telefono">Teléfono</label>
+          <input type="tel" id="input-telefono" name="telefono" placeholder="11 2345 6789" autocomplete="tel">
+        </div>
+
+        <div class="campo" id="campo-direccion" hidden>
+          <label for="input-direccion">Dirección de entrega</label>
+          <input type="text" id="input-direccion" name="direccion" placeholder="Calle, número, piso" autocomplete="street-address">
+        </div>
+
+        <div class="campo">
+          <label for="select-pago">Medio de pago</label>
+          <select id="select-pago" name="pago">
+            <option value="Efectivo">Efectivo</option>
+            <option value="Transferencia">Transferencia</option>
+            <option value="Mercado Pago">Mercado Pago</option>
+          </select>
+        </div>
+
+        <button type="submit" id="boton-confirmar" class="boton-principal">Confirmar pedido</button>
+      </form>
+    </aside>
+
+  </main>
+
+  <footer class="pie">Simulador de pedidos · Proyecto final JavaScript · Coderhouse</footer>
+
+</body>
+</html>
