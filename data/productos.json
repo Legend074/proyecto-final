@@ -1,0 +1,17 @@
+[
+  { "id": 1, "nombre": "Bife de chorizo", "categoria": "Carnes", "precio": 12500, "descripcion": "Corte de 400 g, a punto, con sal entrefina.", "imagen": "assets/img/carnes.svg" },
+  { "id": 2, "nombre": "Vacío", "categoria": "Carnes", "precio": 11800, "descripcion": "Porción de 400 g, tierno y bien dorado.", "imagen": "assets/img/carnes.svg" },
+  { "id": 3, "nombre": "Entraña", "categoria": "Carnes", "precio": 13200, "descripcion": "Fina y jugosa, sale con chimichurri.", "imagen": "assets/img/carnes.svg" },
+  { "id": 4, "nombre": "Asado de tira", "categoria": "Carnes", "precio": 10900, "descripcion": "Tres costillas cortadas finas.", "imagen": "assets/img/carnes.svg" },
+  { "id": 5, "nombre": "Chorizo", "categoria": "Achuras", "precio": 3200, "descripcion": "Puro cerdo, a la parrilla.", "imagen": "assets/img/achuras.svg" },
+  { "id": 6, "nombre": "Morcilla", "categoria": "Achuras", "precio": 2900, "descripcion": "Morcilla bombón, crocante por fuera.", "imagen": "assets/img/achuras.svg" },
+  { "id": 7, "nombre": "Molleja", "categoria": "Achuras", "precio": 7400, "descripcion": "Porción de 250 g con limón.", "imagen": "assets/img/achuras.svg" },
+  { "id": 8, "nombre": "Provoleta", "categoria": "Guarniciones", "precio": 5600, "descripcion": "Con orégano y ají molido.", "imagen": "assets/img/guarniciones.svg" },
+  { "id": 9, "nombre": "Papas fritas", "categoria": "Guarniciones", "precio": 4200, "descripcion": "Porción grande para compartir.", "imagen": "assets/img/guarniciones.svg" },
+  { "id": 10, "nombre": "Ensalada mixta", "categoria": "Guarniciones", "precio": 3800, "descripcion": "Lechuga, tomate y cebolla.", "imagen": "assets/img/guarniciones.svg" },
+  { "id": 11, "nombre": "Gaseosa 1,5 L", "categoria": "Bebidas", "precio": 3500, "descripcion": "Cola, lima limón o naranja.", "imagen": "assets/img/bebidas.svg" },
+  { "id": 12, "nombre": "Agua sin gas 500 ml", "categoria": "Bebidas", "precio": 1500, "descripcion": "Botella individual.", "imagen": "assets/img/bebidas.svg" },
+  { "id": 13, "nombre": "Vino tinto Malbec", "categoria": "Bebidas", "precio": 9800, "descripcion": "Botella de 750 ml.", "imagen": "assets/img/bebidas.svg" },
+  { "id": 14, "nombre": "Flan casero", "categoria": "Postres", "precio": 3900, "descripcion": "Con dulce de leche o crema.", "imagen": "assets/img/postres.svg" },
+  { "id": 15, "nombre": "Panqueque con dulce de leche", "categoria": "Postres", "precio": 4300, "descripcion": "Recién hecho, caliente.", "imagen": "assets/img/postres.svg" }
+]

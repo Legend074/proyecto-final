@@ -1,0 +1,5 @@
+[
+  { "id": "retiro", "nombre": "Retiro en el local", "costo": 0, "demoraMinutos": 25 },
+  { "id": "delivery-cerca", "nombre": "Delivery hasta 3 km", "costo": 1500, "demoraMinutos": 40 },
+  { "id": "delivery-lejos", "nombre": "Delivery de 3 a 6 km", "costo": 2800, "demoraMinutos": 55 }
+]
